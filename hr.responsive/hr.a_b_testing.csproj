@@ -9,7 +9,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{9C3485BD-0C61-432B-A18A-8526D1EA9305}</ProjectGuid>
+    <ProjectGuid>{685CDC53-BCDD-4C78-B800-0820133C1B75}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -75,9 +75,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="panel_collapse_question\css\main.css" />
-    <Content Include="panel_collapse_question\index.html" />
-    <Content Include="panel_collapse_question\js\main.js" />
+    <Content Include="a_b_testing\css\main.css" />
+    <Content Include="a_b_testing\index.html" />
+    <Content Include="a_b_testing\js\main.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
