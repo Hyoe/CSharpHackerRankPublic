@@ -24,6 +24,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -66,6 +67,20 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="level 1\examples\hacker_rank-front_end-level_1-desktop.JPG" />
+    <Content Include="level 1\examples\hacker_rank-front_end-level_1-mobile.JPG" />
+    <Content Include="level 1\examples\hacker_rank-front_end-level_1-tablet.JPG" />
+    <Content Include="level 1\index.html" />
+    <Content Include="level 2\examples\hacker_rank-front_end-level_2-desktop.JPG" />
+    <Content Include="level 2\examples\hacker_rank-front_end-level_2-mobile.JPG" />
+    <Content Include="level 2\examples\hacker_rank-front_end-level_2-tablet.JPG" />
+    <Content Include="level 3\examples\hacker_rank-front_end-level_3-desktop.JPG" />
+    <Content Include="level 3\examples\hacker_rank-front_end-level_3-desktop_mobile-dd_open.JPG" />
+    <Content Include="level 3\examples\hacker_rank-front_end-level_3-mobile-open-dd_open.JPG" />
+    <Content Include="level 3\examples\hacker_rank-front_end-level_3-mobile-open.JPG" />
+    <Content Include="level 3\examples\hacker_rank-front_end-level_3-mobile.JPG" />
+    <Content Include="level 3\examples\hacker_rank-front_end-level_3-tablet.JPG" />
+    <Content Include="level 3\index.html" />
     <Content Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -75,14 +90,13 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="panel_collapse_question\css\main.css" />
-    <Content Include="panel_collapse_question\index.html" />
-    <Content Include="panel_collapse_question\js\main.js" />
+    <Content Include="level 2\index.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
