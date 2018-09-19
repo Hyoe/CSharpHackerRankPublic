@@ -10,41 +10,41 @@ using System.Text;
 ///   Requirements
 ///     -Create a Dog class
 ///        -with the following properties
-///           -id
-///           -name
-///           -age
-///           -sortOrder
-///           -bread
-///        -with the following method that displays
-///           -print()
+///           -Id : int
+///           -Name : string
+///           -Age : int
+///           -SortOrder : int
+///           -bread : string
+///        -with the following methods
+///           -Print()
 ///              -Displays 3 lines using Console.WriteLine()
-///                 -id - (dog's id here)
-///                 -name - (dog's name here)
+///                 -Id - (dog's Id here)
+///                 -Name - (dog's Name here)
 ///                 -bread - (dog's bread here)
 ///     -Create a Cat class 
 ///        -with the following properties
-///           -id
-///           -name
-///           -age
-///           -sortOrder
-///           -lives
-///        -with the following method that displays
-///           -print()
+///           -Id : int
+///           -Name : string
+///           -Age : int
+///           -SortOrder : int
+///           -lives : int
+///        -with the following methods
+///           -Print()
 ///              -Displays 3 lines using Console.WriteLine()
-///                 -id - (cat's id here)
-///                 -name - (cat's name here)
+///                 -Id - (cat's Id here)
+///                 -Name - (cat's Name here)
 ///                 -live - (cat's lives here)
 /// </summary>
 class Solution
 {
     private interface IAnimal
     {
-        int id { get; set; }
-        string name { get; set; }
-        int age { get; set; }
-        int sortOrder { get; set; }
+        int Id { get; set; }
+        string Name { get; set; }
+        int Age { get; set; }
+        int SortOrder { get; set; }
 
-        void print();
+        void Print();
     }
 
     /**********************************************************************/
@@ -53,9 +53,6 @@ class Solution
 
 
     //todo
-
-
-
 
 
     private static void printDashes()
@@ -72,33 +69,33 @@ class Solution
 
         dogs = new List<Dog>()
         {
-            new Dog() {id = 1, name = "Fido", age = 10, sortOrder = 2, bread = "Akita"},
-            new Dog() {id = 2, name = "Spot", age = 1, sortOrder = 0, bread = "German Shepherd"},
-            new Dog() {id = 3, name = "Sam", age = 4, sortOrder = 0, bread = "Labrador Retriever"},
-            new Dog() {id = 4, name = "Jim", age = 12, sortOrder = 5, bread = "Akita"},
-            new Dog() {id = 5, name = "Spotty", age = 2, sortOrder = 4, bread = "German Shepherd"},
-            new Dog() {id = 6, name = "Alfred", age = 4, sortOrder = 1, bread = "Labrador Retriever"}
+            new Dog() {Id = 1, Name = "Fido", Age = 10, SortOrder = 2, bread = "Akita"},
+            new Dog() {Id = 2, Name = "Spot", Age = 1, SortOrder = 0, bread = "German Shepherd"},
+            new Dog() {Id = 3, Name = "Sam", Age = 4, SortOrder = 0, bread = "Labrador Retriever"},
+            new Dog() {Id = 4, Name = "Jim", Age = 12, SortOrder = 5, bread = "Akita"},
+            new Dog() {Id = 5, Name = "Spotty", Age = 2, SortOrder = 4, bread = "German Shepherd"},
+            new Dog() {Id = 6, Name = "Alfred", Age = 4, SortOrder = 1, bread = "Labrador Retriever"}
         };
 
 
         cats = new List<Cat>()
         {
-            new Cat() {id = 1, name = "Fido", age = 10, sortOrder = 2, lives = 4},
-            new Cat() {id = 2, name = "Spot", age = 1, sortOrder = 0, lives = 9},
-            new Cat() {id = 3, name = "Sam", age = 4, sortOrder = 0, lives = 1},
-            new Cat() {id = 4, name = "Jim", age = 12, sortOrder = 5, lives = 2},
-            new Cat() {id = 5, name = "Spotty", age = 2, sortOrder = 4, lives = 5},
-            new Cat() {id = 6, name = "Alfred", age = 4, sortOrder = 1, lives = 6}
+            new Cat() {Id = 1, Name = "Fido", Age = 10, SortOrder = 2, lives = 4},
+            new Cat() {Id = 2, Name = "Spot", Age = 1, SortOrder = 0, lives = 9},
+            new Cat() {Id = 3, Name = "Sam", Age = 4, SortOrder = 0, lives = 1},
+            new Cat() {Id = 4, Name = "Jim", Age = 12, SortOrder = 5, lives = 2},
+            new Cat() {Id = 5, Name = "Spotty", Age = 2, SortOrder = 4, lives = 5},
+            new Cat() {Id = 6, Name = "Alfred", Age = 4, SortOrder = 1, lives = 6}
         };
 
         foreach (var dog in dogs)
         {
-            dog.print();
+            dog.Print();
         }
 
         foreach (var cat in cats)
         {
-            cat.print();
+            cat.Print();
         }
 
         Console.Read();
