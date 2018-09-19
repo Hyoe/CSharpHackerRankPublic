@@ -1,4 +1,4 @@
-﻿#fst.di Instructions
+﻿# fst.di Instructions
 
 1. Create and implement two implementations of the IBoxFactory interface called RealBoxFactory and FakeBoxFactory. 
   * The boxes created can be of any size you wish as long as they are different
