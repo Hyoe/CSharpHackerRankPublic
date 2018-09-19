@@ -1,35 +1,35 @@
 ﻿
 
-///   Complete the Typescript file
-///
-///   Requirements
-///     -Create a IAnimal interface 
-///         -with the following requirements:
-///             - visisble outside of the fst.assesment module
-///             - contains the following properties (use appropriate data types in your implementation):
-///                 -id, contains whole number as a public variable
-///                 -name, string as a public variable
-///                 -age, contains decimal numbers as a public variable
-///                 -sortOrder of type number as a private variable
-///             - conatains the following methods (Decorate with paramater and return types)
-///                 -greet(to) - parameter 'to' is a string which does not returns anything
-///     -Create a Animal class that implements from the IAnimal interface
-///         - Make this class visible outside of the fst.assessment module
-///         - implement the greet method to ouput "Not Implemented" to the console
-///         - A constructor with optional paramaters for id, name, age, and sortOrder with appropriate default values
-///     -Create a Dog class that inherits from the Animal class
-///         - Make this class visible outside of the fst.assessment module
-///         - Add the following Properties:
-///             - Breed, string as a public variable
-///         - implement the greet method to ouput "Bark + {to} from a {breed}" to the console
-///         - A constructor with required paramaters for breed and optional parameters for name, age, and sortOrder with appropriate default values
-///     -Create a Cat class that inherits from the Animal class
-///         - Make this class visible outside of the fst.assessment module
-///         - with the following properties
-///             -lives, whole numbers as a public variable
-///         - implement the greet method to ouput "Meow + {to} from {name}" to the console
-///         - add a ToJsonString() method that returns the stringified JSON of the class
-///         - A constructor with required paramaters for lives and optional parameters for name, age, and sortOrder with appropriate default values
+//   Complete the Typescript file
+//
+//   Requirements
+//     -Create a IAnimal interface 
+//         -with the following requirements:
+//             - visisble outside of the fst.assesment module
+//             - contains the following properties (use appropriate data types in your implementation):
+//                 -id, contains whole number 
+//                 -name, string 
+//                 -age, contains decimal numbers
+//                 -sortOrder of type number 
+//             - conatains the following methods (Decorate with paramater and return types)
+//                 -greet(to) - parameter 'to' is a string which does not returns anything
+//     -Create a Animal class that implements from the IAnimal interface
+//         - Make this class visible outside of the fst.assessment module
+//         - implement the greet method to ouput "Not Implemented" to the console
+//         - A constructor with optional paramaters for id, name, age, and sortOrder with appropriate default values
+//     -Create a Dog class that inherits from the Animal class
+//         - Make this class visible outside of the fst.assessment module
+//         - Add the following Properties:
+//             - Breed, string as a public variable
+//         - implement the greet method to ouput "Bark + {to} from a {breed}" to the console
+//         - A constructor with required paramaters for breed and optional parameters for name, age, and sortOrder with appropriate default values
+//     -Create a Cat class that inherits from the Animal class
+//         - Make this class visible outside of the fst.assessment module
+//         - with the following properties
+//             -lives, whole numbers as a public variable
+//         - implement the greet method to ouput "Meow + {to} from {name}" to the console
+//         - add a ToJsonString() method that returns the stringified JSON of the class
+//         - A constructor with required paramaters for lives and optional parameters for name, age, and sortOrder with appropriate default values
 
 
 

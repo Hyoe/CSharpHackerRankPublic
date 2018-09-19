@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2037
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fst.typescript", "fst.typescript\fst.typescript.csproj", "{C1A78C99-E66F-40A6-B7AF-041FC2626B9B}"
 EndProject
@@ -18,6 +18,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hr.oop", "hr.oop\hr.oop.csproj", "{7B8DECF6-E926-475C-AF92-71923A504696}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fst.books", "fst.books\fst.books.csproj", "{246FB33F-2BC6-4817-A1EA-C5F1AF9C5BA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fst.di", "fst.di\fst.di.csproj", "{886C9CC8-AFC8-4577-AFD2-2B591199F712}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,8 +59,15 @@ Global
 		{246FB33F-2BC6-4817-A1EA-C5F1AF9C5BA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{246FB33F-2BC6-4817-A1EA-C5F1AF9C5BA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{246FB33F-2BC6-4817-A1EA-C5F1AF9C5BA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{886C9CC8-AFC8-4577-AFD2-2B591199F712}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{886C9CC8-AFC8-4577-AFD2-2B591199F712}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{886C9CC8-AFC8-4577-AFD2-2B591199F712}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{886C9CC8-AFC8-4577-AFD2-2B591199F712}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0D7EE6FA-1E4C-4661-B1C6-71F00480A69A}
 	EndGlobalSection
 EndGlobal

@@ -12,7 +12,7 @@ namespace fst.books
     /// google books documentation - https://developers.google.com/books/docs/v1/using#WorkingVolumes 
     /// 
     /// Instructions:
-    /// Create a C# Class to Convert the json into
+    /// Create a C# Class to deserialize the json into
     /// Send a request to google books api search for J.K. Rowling as the author
     /// print out to the console each book's:
     ///     -title
