@@ -29,11 +29,9 @@ namespace fst.di
 
             if (Environment.IsDevelopment())
             {
-                services.AddSingleton<IBoxFactory, FakeBoxFactory>();
             }
             else
             {
-                services.AddSingleton<IBoxFactory, RealBoxFactory>();
             }
 
             services.AddMvc();
