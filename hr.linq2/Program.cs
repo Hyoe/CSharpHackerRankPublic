@@ -66,23 +66,32 @@ namespace LinqAdvanced
         /*****************************************************************/
 
         //Select and return a list of the customer address for all orders that have more then 1 order item associated with it
-        public static List<Address> getAddressList()
+        public static List<Address> GetAddressList()
         {
             //todo
-            return null; //This is here just so this file compiles
+            List<Address> addresses = orders.Where(x => x.items.Count > 1).Select(x => x.customer.address).ToList();
+
+            return addresses; //This is here just so this file compiles
         }
 
         //select all order items from all orders as a list
         public static List<OrderItem> getAllOrderItems()
         {
             //todo
-            return null; //This is here just so this file compiles
+            List<OrderItem> orderList = orders.SelectMany(x => x.items).Select(a => a).ToList();
+
+            return orderList; //This is here just so this file compiles
         }
 
         //update each orders tax and total based on it's order items
         public static void setTotals()
         {
             //todo
+            orders.ForEach(o =>
+            {
+                o.tax = o.items.Sum(i => (i.price * i.qty) * 0.0775);
+                o.total = o.items.Sum(i => (i.price * i.qty) + ((i.price * i.qty) * 0.0775));
+            });
         }
 
         /*****************************************************************/
@@ -168,7 +177,7 @@ namespace LinqAdvanced
             };
 
             //q1 customer addresses
-            var addresses = getAddressList();
+            var addresses = GetAddressList();
             addresses.ForEach(a => a.print());
             //q2 order items
             var items = getAllOrderItems();
