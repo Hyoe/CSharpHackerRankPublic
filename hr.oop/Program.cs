@@ -53,6 +53,35 @@ class Solution
 
 
     //todo
+    private class Dog : IAnimal
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public int Age { get; set; }
+        public int SortOrder { get; set; }
+        public string Bread { get; set; }
+        public void Print()
+        {
+            Console.WriteLine($"Id - {this.Id}");
+            Console.WriteLine($"Name - {this.Name}");
+            Console.WriteLine($"Bread - {this.Bread}");
+        }
+    }
+
+    private class Cat : IAnimal
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public int Age { get; set; }
+        public int SortOrder { get; set; }
+        public int Lives { get; set; }
+        public void Print()
+        {
+            Console.WriteLine($"Id - {this.Id}");
+            Console.WriteLine($"Name - {this.Name}");
+            Console.WriteLine($"Lives - {this.Lives}");
+        }
+    }
 
 
     private static void printDashes()
@@ -91,11 +120,13 @@ class Solution
         foreach (var dog in dogs)
         {
             dog.Print();
+            printDashes();
         }
 
         foreach (var cat in cats)
         {
             cat.Print();
+            printDashes();
         }
 
         Console.Read();
