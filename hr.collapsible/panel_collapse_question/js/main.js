@@ -12,4 +12,16 @@
 
  $(function(){
 	//Add your code here
+     var isVisible = true;
+
+     $('.panel-heading').on('click', function () {
+         if (isVisible) {
+             $('.panel-body').hide();
+             isVisible = false;
+         }
+         else {
+             $('.panel-body').show();
+             isVisible = true;
+         }
+     });
  });
