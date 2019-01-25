@@ -38,16 +38,24 @@ class Solution
     static void printDogNames()
     {
         //todo
+        var dogNames = dogs.Select(x => x.name).Distinct().ToList();
+        dogNames.ForEach(x => { Console.WriteLine(x); });
+
     }
     ///<summary>Print all dogs order by their sortOrder property</summary>
     static void printDogsInOrder()
     {
         //todo
+        var dogsSorted = dogs.OrderBy(x => x.sortOrder).ToList();
+        dogsSorted.ForEach(x => x.print());
     }
     ///<summary>Print all dogs that have an age > 3 (sorted by sortOrder descending)</summary>
     static void printDogsOverAge3()
     {
         //todo
+        var dogsSortedGreaterThanThree = dogs.Where(x => x.age > 3).OrderByDescending(x => x.sortOrder).ToList();
+        dogsSortedGreaterThanThree.ForEach(x => x.print());
+
     }
 
 
